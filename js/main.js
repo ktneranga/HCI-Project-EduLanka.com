@@ -3,3 +3,9 @@ $(document).ready(function() {
     $('#grid').click(function(event){event.preventDefault();$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');});
 });
 
+
+// carouse interval
+$('#myCarousel').carousel({
+    interval: 3000,
+ })
+

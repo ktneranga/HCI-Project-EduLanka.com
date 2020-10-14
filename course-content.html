@@ -127,10 +127,9 @@
               <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
               <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is optional, and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which will toggle the menu when clicked.</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat eveniet fugiat earum mollitia tenetur voluptatem, exercitationem, ex quae molestias beatae distinctio expedita voluptatum, nihil hic! Fuga necessitatibus laboriosam repellat ullam.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat eveniet fugiat earum mollitia tenetur voluptatem, exercitationem, ex quae molestias beatae distinctio expedita voluptatum, nihil hic! Fuga necessitatibus laboriosam repellat ullam.</p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci aliquam quis ex asperiores temporibus unde numquam at repellat labore modi? Voluptas cum maxime minus omnis error, maiores repellendus accusantium ipsam!</p>
               <div class="row">
-                <div class="col-12">
+                <div class="col-12 col-sm-12 ">
                   <div class="card text-white bg-dark mt-3 mb-3" style="height:250px; margin: 0 auto; width: 100%;">
                     <div class="card-header">Code Window</div>
                     <div class="card-body bg-secondary text-dark">
@@ -258,13 +257,25 @@
 
       <section id="comment">
         <div class="container">
-          <div class="row mt-5">
+          <div class="row mt-5 mb-5">
             <div class="col-12">
               <h3>Leave a comment</h3>
             </div>
           </div>
 
-          <form class="needs-validation" novalidate>
+          <div class="row">
+              <div class="col-12">
+                  <ul id="comment-list">
+                      
+                  </ul>
+              </div>
+          </div>
+
+          <div class="show-alert">
+
+          </div>
+
+          <form class="needs-validation mt-3" id="book-form" novalidate>
             <div class="form-row">
               <div class="col-md-6 mb-3">
                 <input type="text" class="form-control" id="validationCustom01" placeholder="Name here..." required>
@@ -297,41 +308,44 @@
       </section>
       
       <section id="footer" class="text-center">
-        <h2 class="font-weight-bold"><i class="fas fa-book-open primary text-primary"></i> Edulanka<span class="text-primary">.com</span></h2>
-        <div class="row">
-          <div class="col-md-6 mx-auto">
-            <small>Welcome to eduLanka.LK, Largest online education web site in Sri Lanka. EduLanka.lk, nonprofit & educational website provides online lessons, education course information, teachers information, E books, examination result notifications, government job alerts, tuition class information, career guide for schooll eavers and more options.</small>
+        <div class="container">
+          <h2 class="font-weight-bold"><i class="fas fa-book-open primary text-primary"></i> Edulanka<span class="text-primary">.com</span></h2>
+          <div class="row">
+            <div class="col-md-6 mx-auto">
+              <small>Welcome to eduLanka.LK, Largest online education web site in Sri Lanka. EduLanka.lk, nonprofit & educational website provides online lessons, education course information, teachers information, E books, examination result notifications, government job alerts, tuition class information, career guide for schooll eavers and more options.</small>
+            </div>
           </div>
-        </div>
-        <br>
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github-square"></i></a>
+          <br>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github-square"></i></a>
         <hr>
-        <small>Copyright © 2005 - 2018 (ඉස්කෝලේ) eduLanka Online Education School of Sri Lanka</small>   
-       </section>
+        <small>Copyright © 2005 - 2018 (ඉස්කෝලේ) eduLanka Online Education School of Sri Lanka</small>
+        </div>   
+      </section>
     
 <script>
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-(function() {
-  'use strict';
-  window.addEventListener('load', function() {
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.getElementsByClassName('needs-validation');
-    // Loop over them and prevent submission
-    var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  }, false);
-})();
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function() {
+    'use strict';
+    window.addEventListener('load', function() {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
 </script>
+<script src="js/comment.js"></script>
 <script src="https://kit.fontawesome.com/1568507323.js" crossorigin="anonymous"></script>  
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
