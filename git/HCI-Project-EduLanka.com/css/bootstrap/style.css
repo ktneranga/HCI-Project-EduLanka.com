@@ -1,0 +1,631 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p.about-paragraph {
+  color: rgb(133, 131, 131);
+}
+
+.navbar {
+  /* padding: 0.5rem 7rem !important; */
+  background: #fff !important;
+}
+
+/* .al{
+    color:black;
+    background-color: #6e6e7d;
+    
+}
+.all{
+    font-weight: 900;
+    font-family: "Helvetica Neue LT Std 75 Bold";
+    padding: 11px 18px;
+    font-size: 20px;
+    border-radius: 5px;
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase ;
+} */
+
+.navbar .dropdown-menu {
+  background: #fff !important;
+  font-weight: 500;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #0275d8 !important;
+}
+
+.sec-para {
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 17px;
+}
+
+.al {
+  font-weight: 900;
+  font-family: "Helvetica Neue LT Std 75 Bold";
+  white-space: nowrap;
+  padding: 11px 18px;
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  border-radius: 5px;
+  text-transform: uppercase !important;
+  color: black;
+  background-color: #6e6e7d;
+}
+
+.nav-link {
+  /* font-family: 'Teko', sans-serif; */
+  font-size: 16px;
+  padding: 0 10px !important;
+  font-weight: 600;
+  margin: 2px;
+  color: #0275d8 !important;
+}
+
+.nav-link:hover {
+  color: #034f91 !important;
+}
+.link-go{
+  color: red !important;
+  text-decoration: none !important;
+}
+
+  
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif
+}
+
+.underline {
+  width: 6vw;
+  height: 3px;
+  background-color: #0275d8;
+ 
+}
+
+.slider img {
+  height: 100vh;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 250px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+}
+
+.flip-card:hover {
+  cursor: pointer;
+}
+
+/* This container is needed to position the front and back side */
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+
+.flip-card-back {
+  background-color: dodgerblue;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back h6 {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.flip-card-back p {
+  font-size: 18px;
+}
+
+.flip-card-section {
+  /* background: #eee; */
+  padding: 50px 0;
+}
+
+.align-items-center {
+  display: flex;
+  align-items: center;
+  /*Aligns vertically center */
+  justify-content: center;
+  /*Aligns horizontally center */
+}
+
+.flip-card-back {
+  padding: 30px;
+}
+
+/* about section styleing */
+
+#about-content-box {
+  float: left;
+  height: 700px;
+}
+
+#about-content-box-outer {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+#about-content-box-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#about-bg-diagonal {
+  width: 60%;
+  height: 100vh;
+  float: right;
+  /* background-color: red; */
+  background-image: url(/img/bg-about.jpg);
+  border-left: 200px solid white;
+  border-top: 700px solid transparent;
+}
+
+.bg-parallax {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.title-section {
+  height: 50vh;
+  position: relative;
+}
+
+.title-area {
+  width: 100%;
+  height: 100%;
+  background-color: #0275d8;
+}
+
+.title-section h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 50px;
+}
+
+/* grid view list view */
+
+.view-group {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.thumbnail {
+  margin-bottom: 30px;
+  padding: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+
+.item.list-group-item {
+  float: none;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 30px;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 1rem;
+  border: 0;
+}
+
+.item.list-group-item .img-event {
+  float: left;
+  width: 30%;
+}
+
+.item.list-group-item .list-group-image {
+  margin-right: 10px;
+}
+
+.item.list-group-item .thumbnail {
+  margin-bottom: 0px;
+  display: inline-block;
+}
+
+.item.list-group-item .caption {
+  float: left;
+  width: 70%;
+  margin: 0;
+}
+
+.item.list-group-item:before, .item.list-group-item:after {
+  display: table;
+  content: " ";
+}
+
+.item.list-group-item:after {
+  clear: both;
+}
+
+/* card section */
+
+.img-event {
+  overflow: hidden;
+}
+
+.img-event img {
+  transition: all 1.0s ease;
+}
+
+.img-event:hover img {
+  transform: scale(1.2);
+}
+
+div.num {
+  font-size: 50px;
+  color: #0275d8;
+}
+
+div .counter i {
+  font-size: 50px;
+  color: #0275d8;
+}
+
+/* course-content design */
+
+#wrapper {
+  overflow-x: hidden;
+  max-height: 150vh;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  max-height: 100%;
+  margin-left: -15rem;
+  min-width: 15rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-transition: margin .25s ease-out;
+  -moz-transition: margin .25s ease-out;
+  -o-transition: margin .25s ease-out;
+  transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+  background-color: #49a4f3;
+  color: #fff;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+  max-height: 100%;
+  overflow-y: hidden;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+.scrollable {
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 150px;
+}
+
+/* footer */
+
+section#footer {
+  padding: 50px 0;
+  background: #eee;
+  margin-top: 50px;
+}
+
+a .fab {
+  font-size: 28px;
+  margin: 0 10px;
+}
+
+.div1 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+}
+
+.div2 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+}
+
+.div3 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+}
+
+.div4 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+}
+
+.div5 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+}
+
+.div6 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+}
+
+.div7 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+}
+
+.div8 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+}
+
+.div9 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+}
+
+.div10 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+}
+
+.div11 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+}
+
+.div12 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+}
+
+.div13 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+}
+
+.div14 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+}
+
+.div15 {
+  width: 300px;
+  height: 100px;
+  border: 1px solid blue;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+.hero-image {
+  background-color: #3fabb3;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.subject {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  text-align: start;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(27, 27, 27);
+}
+
+div.font-weight-bold1 {
+  text-align: center;
+}
+
+#myInput1 {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL1 {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL1 li a {
+  border: 1px solid #ddd;
+  margin-top: -1px;
+  /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL1 li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+#myInput2 {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL2 {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL2 li a {
+  border: 1px solid #ddd;
+  margin-top: -1px;
+  /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL2 li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+.Image1 {
+  background-color: #3fabb3 !important;
+  width: 100%;
+ 
+}
+.underline-2{
+  width: 6vw;
+  height: 3px;
+  background-color: #0275d8;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+.ed-img{
+  width: 100%;
+  border: 5px solid #555;
+  border-radius: 10px;
+ 
+}
