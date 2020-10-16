@@ -1,0 +1,100 @@
+* {margin:0; padding:0;}
+a{text-decoration:none;}
+.clearfix{overflow:auto}
+
+
+
+
+div.intro{
+	
+	margin: 1px;
+	
+}
+div.intro div.introimage{
+	width: 500px;
+	margin-left: 120px;
+	float: left;
+}
+div.intro div.introimage2{
+	width: 500px;
+	margin-left: 120px;
+	float: left;
+}
+div.intro div.introtext{
+	width : 800px;
+	float: left;
+	
+}
+
+div.intro1{
+	
+	margin: 15px;
+}
+div.intro1 div.introimage1{
+	width: 500px;
+	float: left;
+	height:500px;
+}
+div.intro1 div.introtext1{
+	width : 800px;
+	float: left;
+	
+}
+div.introtext h1{
+	font-weight: normal;
+	margin-top: 50px;
+	font-size: 72px;
+	text-transform: uppercase;
+}
+
+div.tab{
+	width:1000px;
+	background: #eee;
+}
+
+footer{
+	width: 1000px;
+	margin-top: 50px;
+	margin-bottom: 15px;
+	float: left;
+}
+
+div.footercol{
+	width: 231.25px;
+	float: left;
+	margin-left: 15px;
+	border-top: 1px solid #000;
+}
+
+div.footercol h4{
+	text-transform: uppercase;
+	margin-top: 15px;
+	color: #444;
+}
+div.tweet p{
+	font-size: 16px;
+}
+ul.quicklinks{
+	margin-top: 10px;
+	list-style: none;
+}
+ul.quicklinks li a{
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	display: block;
+	border-bottom: 5px solid #aaa;
+	color: blue;
+}
+ul.quicklinks li a::before{
+	content: "*" ;
+}
+ul.quicklinks li a:hover{
+	color:red;
+}
+
+
+.paper{
+	margin-left: 50px;
+	
+	margin-right: 50px;
+}

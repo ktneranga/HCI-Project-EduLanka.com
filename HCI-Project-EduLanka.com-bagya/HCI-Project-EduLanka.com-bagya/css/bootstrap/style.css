@@ -1,0 +1,537 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p.about-paragraph{
+  color: rgb(133, 131, 131);
+}
+.navbar{
+  /* padding: 0.5rem 7rem !important; */
+  background: #fff !important;
+}
+
+.navbar .dropdown-menu{
+  background: #fff !important;
+  font-weight: 500;
+}
+
+.dropdown-menu .dropdown-item{
+  color:  #0275d8 !important;
+}
+
+.nav-link{
+  /* font-family: 'Teko', sans-serif; */
+  font-size: 16px;
+  padding: 0 10px !important;
+  font-weight: 600;
+  margin: 2px;
+  color: #0275d8 !important;
+}
+
+.nav-link:hover{
+  color: #034f91 !important;
+}
+
+h1,h2,h3{
+  font-family: 'Raleway', sans-serif
+}
+
+.underline{
+  width: 60px;
+  height: 6px;
+  background-color: #0275d8;
+}
+
+/* carousel start */
+#myCarousel .carousel-item .mask {
+  position: absolute;
+  top: 0;
+left:0;
+height:100%;
+  width: 100%;
+  background-attachment: fixed;
+  background-color: #360479;
+}
+#myCarousel h4{
+font-size:50px;
+margin-bottom:15px;
+color:#FFF;
+line-height:100%;
+letter-spacing:0.5px;
+font-weight:600;
+}
+#myCarousel p{
+font-size:18px;
+margin-bottom:15px;
+color:#d5d5d5;
+}
+#myCarousel .carousel-item a{background:#F47735; font-size:14px; color:#FFF; padding:13px 32px; display:inline-block; }
+#myCarousel .carousel-item a:hover{background:#394fa2; text-decoration:none;  }
+
+#myCarousel .carousel-item h4{-webkit-animation-name:fadeInLeft; animation-name:fadeInLeft;} 
+#myCarousel .carousel-item p{-webkit-animation-name:slideInRight; animation-name:slideInRight;} 
+#myCarousel .carousel-item a{-webkit-animation-name:fadeInUp; animation-name:fadeInUp;}
+#myCarousel .carousel-item .mask img{-webkit-animation-name:slideInRight; animation-name:slideInRight; display:block; height:auto; max-width:100%;}
+#myCarousel h4, #myCarousel p, #myCarousel a, #myCarousel .carousel-item .mask img{-webkit-animation-duration: 1s;
+  animation-duration: 1.2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+/* #myCarousel .container {max-width: 1430px;  } */
+#myCarousel .carousel-item{height:100vh; min-height:550px; }
+#myCarousel{position:relative; z-index:1; background:url(https://i.imgur.com/6axE29k.jpg) center center no-repeat; background-size:cover; }
+
+.carousel-control-next, .carousel-control-prev{height:40px; width:40px; padding:12px; top:50%; bottom:auto; transform:translateY(-50%); background-color: #f47735; }
+
+
+.carousel-item {
+  position: relative;
+  display: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  transition: -webkit-transform .6s ease;
+  transition: transform .6s ease;
+  transition: transform .6s ease,-webkit-transform .6s ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+.carousel-fade .carousel-item {
+opacity: 0;
+-webkit-transition-duration: .6s;
+transition-duration: .6s;
+-webkit-transition-property: opacity;
+transition-property: opacity
+}
+.carousel-fade .carousel-item-next.carousel-item-left, .carousel-fade .carousel-item-prev.carousel-item-right, .carousel-fade .carousel-item.active {
+opacity: 1
+}
+.carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-right.active {
+opacity: 0
+}
+.carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item-prev.active, .carousel-fade .carousel-item.active {
+-webkit-transform: translateX(0);
+-ms-transform: translateX(0);
+transform: translateX(0)
+}
+@supports (transform-style:preserve-3d) {
+.carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item-prev.active, .carousel-fade .carousel-item.active {
+-webkit-transform:translate3d(0, 0, 0);
+transform:translate3d(0, 0, 0)
+}
+}
+.carousel-fade .carousel-item-left.active, .carousel-fade .carousel-item-next, .carousel-fade .carousel-item-prev, .carousel-fade .carousel-item-prev.active, .carousel-fade .carousel-item.active {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+
+
+@-webkit-keyframes fadeInLeft {
+from {
+  opacity: 0;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+
+to {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+}
+
+@keyframes fadeInLeft {
+from {
+  opacity: 0;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+
+to {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+}
+
+.fadeInLeft {
+-webkit-animation-name: fadeInLeft;
+animation-name: fadeInLeft;
+}
+
+@-webkit-keyframes fadeInUp {
+from {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+}
+
+to {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+}
+
+@keyframes fadeInUp {
+from {
+  opacity: 0;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+}
+
+to {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+}
+
+.fadeInUp {
+-webkit-animation-name: fadeInUp;
+animation-name: fadeInUp;
+}
+
+@-webkit-keyframes slideInRight {
+from {
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+  visibility: visible;
+}
+
+to {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+}
+
+@keyframes slideInRight {
+from {
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+  visibility: visible;
+}
+
+to {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+}
+
+.slideInRight {
+-webkit-animation-name: slideInRight;
+animation-name: slideInRight;
+}
+
+/* carousel end */
+
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 250px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+
+  .flip-card:hover{
+      cursor: pointer;
+  }
+
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+  }
+
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+
+  /* Style the back side */
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: black;
+    transform: rotateY(180deg);
+  }
+  .flip-card-back h6{
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .flip-card-back p{
+    font-size: 18px;
+  }
+
+  .flip-card-section{
+      /* background: #eee; */
+      padding: 50px 0;
+  }
+
+  .align-items-center {
+    display: flex;
+    align-items: center;  /*Aligns vertically center */
+    justify-content: center; /*Aligns horizontally center */
+  }
+
+.flip-card-back{
+  padding: 30px;
+}
+
+/* about section styleing */
+#about-content-box{
+  float: left;
+  height: 700px;
+}
+
+#about-content-box-outer{
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+#about-content-box-inner{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#about-bg-diagonal{
+  width: 60%;
+  height: 100vh;
+  float: right;
+  /* background-color: red; */
+  background-image: url(/img/bg-about.jpg);
+  border-left: 200px solid white;
+  border-top: 700px solid transparent;
+}
+
+.bg-parallax{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.title-section{
+  height: 50vh;
+  position: relative;
+}
+
+.title-area{
+  width: 100%;
+  height: 100%;
+  background-color: #0275d8;
+}
+
+.title-section h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 50px;
+}
+
+/* grid view list view */
+
+.view-group {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.thumbnail
+{
+  margin-bottom: 30px;
+  padding: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+
+.item.list-group-item
+{
+  float: none;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 30px;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 1rem;
+  border: 0;
+}
+.item.list-group-item .img-event {
+  float: left;
+  width: 30%;
+}
+
+.item.list-group-item .list-group-image
+{
+  margin-right: 10px;
+}
+.item.list-group-item .thumbnail
+{
+  margin-bottom: 0px;
+  display: inline-block;
+}
+.item.list-group-item .caption
+{
+  float: left;
+  width: 70%;
+  margin: 0;
+}
+
+.item.list-group-item:before, .item.list-group-item:after
+{
+  display: table;
+  content: " ";
+}
+
+.item.list-group-item:after
+{
+  clear: both;
+}
+/* card section */
+
+.img-event{
+  overflow: hidden;
+}
+
+.img-event img{
+  transition: all 1.0s ease;
+}
+
+.img-event:hover img{
+  transform: scale(1.2);
+}
+
+div.num{
+  font-size:50px;
+  color: #0275d8;
+}
+
+div .counter i{
+  font-size: 50px;
+  color: #0275d8;
+}
+
+/* course-content design */
+
+#wrapper {
+  overflow-x: hidden;
+  max-height: 150vh;
+}
+
+@media screen and (max-width : 480px){
+  #wrapper{
+    overflow-x: hidden;
+    max-height: 300vh;
+  }
+}
+
+@media screen and (max-width : 350px){
+  #wrapper{
+    overflow-x: hidden;
+    max-height: 350vh;
+  }
+}
+
+#sidebar-wrapper {
+min-height: 100vh;
+max-height: 100%;
+margin-left: -15rem;
+min-width: 15rem;
+overflow-y: auto;
+overflow-x: hidden;
+-webkit-transition: margin .25s ease-out;
+-moz-transition: margin .25s ease-out;
+-o-transition: margin .25s ease-out;
+transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+padding: 0.875rem 1.25rem;
+font-size: 1.2rem;
+background-color: #49a4f3;
+color: #fff;
+}
+
+#sidebar-wrapper .list-group {
+width: 15rem;
+}
+
+#page-content-wrapper {
+min-width: 100vw;
+max-height: 100%;
+overflow-y: hidden;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+margin-left: 0;
+}
+
+@media (min-width: 768px) {
+#sidebar-wrapper {
+  margin-left: 0;
+}
+
+#page-content-wrapper {
+  min-width: 0;
+  width: 100%;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: -15rem;
+}
+}
+
+.scrollable{
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 150px;
+}
+
+/* footer */
+
+section#footer{
+  padding: 50px 0;
+  background: #d9d9d9;
+  margin-top: 50px;
+}
+
+a .fab{
+  font-size: 28px;
+  margin:0 10px;
+}
+
+ul li{
+  list-style: none;
+}
